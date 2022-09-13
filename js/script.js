@@ -43,7 +43,7 @@ const titleClickHandler = function (event) {
   /* [DONE] add class 'active' to the correct article */
   targetArticle.classList.add('active');
   console.log(articleSelector);
-}
+} ;
 
 
 const links = document.querySelectorAll('.titles a');
