@@ -291,7 +291,7 @@ const tagClickHandler = function (event){
   
   const targetTags = document.querySelectorAll('a[href="' + href + '"]');
   /* START LOOP: for each found tag link */
-  for (targetTag of targetTags) {
+  for (let targetTag of targetTags) {
   /* add class active */
     targetTag.classList.add('active');
     console.log('Target Tag: ' + targetTags); 
@@ -434,7 +434,7 @@ const addClickListenersToAuthors= function() {
   const authorLinks = document.querySelectorAll('a[href^="#author-"]');
 
   /* [DONE] START LOOP: for each link */
-  for(let authorlink of authorLinks){
+  for(let authorLink of authorLinks){
   /* add tagClickHandler as event listener for that link */
     authorLink.addEventListener('click', authorClickHandler);
   /* [DONE] END LOOP: for each link */
